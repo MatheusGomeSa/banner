@@ -1,0 +1,265 @@
+* 
+{
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container .banner {
+    width: 1350px;
+    height: 220px;
+    background: linear-gradient(130deg, rgb(3, 0, 24) 0%, rgb(76, 20, 104) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    
+}
+
+
+.container .banner .banner-content > div {
+    display: grid;
+    grid-auto-flow: column;
+    width: fit-content;
+    gap: 3rem;
+    filter: drop-shadow(0px 2px 1px rgba(70,70,70,1));
+
+}
+
+
+:root {
+    --react-color: #61DBFB;
+    --javascript-yellow-color: #F0DB4F;
+    --javascript-black-color: #323330;
+    --typescript-blue-color: #007acc;
+    --typescript-white-color: #ffffff;
+    /* logo size */
+    --logo-size: 80px;
+    --white-next-color: #ffffff;
+}
+
+
+.container .banner .banner-content .JavaScript{
+    width: var(--logo-size);
+    height: var(--logo-size);
+    border-radius: 5px;
+    background: var(--javascript-yellow-color);
+    color: var(--javascript-black-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.container .banner .banner-content .TypeScript{
+    width: var(--logo-size);
+    height: var(--logo-size);
+    border-radius: 5px;
+    background: var(--typescript-blue-color);
+    color: var(--typescript-white-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.container .banner .banner-content .row-2 {
+    gap:2rem;
+}
+
+.container .banner .banner-content .Reactjs {
+    margin: 10px;
+    width: var(--logo-size);
+    height: var(--logo-size);
+    margin-top: 10px;
+    margin-left: 60px;
+    position: relative;
+}
+
+
+.container .banner .banner-content .Reactjs .left-ring{
+    position: absolute;
+    transform: rotateZ(60deg);
+    top:0;
+    height: 30px;
+    width: 80px;
+    border: 4px solid var(--react-color);
+    border-radius: 50%;
+    top:calc(50% - 17px);
+}
+.container .banner .banner-content .Reactjs .right-ring{
+    z-index: 1;
+    position: absolute;
+    transform: rotateZ(-60deg);
+    height: 30px;
+    width: 80px;
+    border: 4px solid var(--react-color);
+    border-radius: 50%;
+    top:calc(50% - 17px);
+}
+
+.container .banner .banner-content .Reactjs .center-ring{
+    z-index: 1;
+    position: absolute;
+    height: 30px;
+    width: 80px;
+    border: 4px solid var(--react-color);
+    border-radius: 50%;
+    top:calc(50% - 17px);
+}
+.container .banner .banner-content .Reactjs .center-circle{
+    z-index: 1;
+    position: absolute;
+
+    height: 14px;
+    width: 14px;
+    border: 2px solid var(--react-color);
+    border-radius: 50%;
+    top:calc(50% - 7px);
+    left:calc(50% - 7px);
+    background-color: var(--react-color);
+}
+
+.container .banner .banner-content .NextJs {
+    margin-top: 20px;
+    width: 120px;
+    height: 70px;
+    border: solid 1px var(--white-next-color);
+    border-radius: 50%;
+    display: flex;
+    position:relative
+}
+.container .banner .banner-content .NextJs .letter-n {
+    width: 20px;
+    height: 50px;
+    position: relative;
+}   
+
+.container .banner .banner-content .NextJs .letter-n::after {
+    content: "";
+    width: 2px;
+    height: 25px;
+    background: var(--white-next-color);
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 50%; 
+    display: block;
+}
+
+.container .banner .banner-content .NextJs .letter-n::before {
+    content: "";
+    width: 2px;
+    height: 50px;
+    background: var(--white-next-color);
+    position: absolute;
+    top: 36%;
+    transform: rotateZ(150deg);
+    left: 111%; 
+    display: block;
+    clip-path: polygon(50% 0, 100% 100%, 0 98%);
+}
+.container .banner .banner-content .NextJs .letter-e {
+    width: 25px;
+    height: 50px;
+    position: relative;
+}   
+.container .banner .banner-content .NextJs .letter-e::after {
+    content: "";
+    width: 15px;
+    height: 22px;
+    background: transparent;
+    border-top: 2px solid var(--white-next-color);
+    border-left: 2px solid var(--white-next-color);
+    border-bottom: 2px solid var(--white-next-color);
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 40%; 
+    display: block;
+}
+.container .banner .banner-content .NextJs .letter-e::before {
+    content:'';
+    position: relative;
+    width:15px;
+    height: 2px;
+    top: 68%;
+    left: 44%; 
+    background: var(--white-next-color);
+    display: block;
+}
+.container .banner .banner-content .NextJs .letter-x {
+    width: 25px;
+    height: 50px;
+    position: relative;
+}
+.container .banner .banner-content .NextJs .letter-x::after {
+    content: "";
+    width: 2px;
+    height:50px;
+    background: var(--white-next-color);
+    position: absolute;
+    top: 5%;
+    transform: rotateZ(30deg);
+    left: 19px; 
+    clip-path: polygon(0 100%, 0 70%, 50% 0, 100% 70%, 100% 98%);
+
+    display: block;
+}
+.container .banner .banner-content .NextJs .letter-x::before {
+    content: "";
+    width: 2px;
+    height: 32px;
+    background: var(--white-next-color);
+    position: absolute;
+    top: 40%;
+    transform: rotateZ(-30deg);
+    left: 15px; 
+    clip-path: polygon(0 0, 0 95%, 100% 99%, 100% 3%);
+    display: block;
+}
+.container .banner .banner-content .NextJs .letter-t {
+    width: 20px;
+    height: 50px;
+    position: relative;
+}
+.container .banner .banner-content .NextJs .letter-t::after {
+    content: "";
+    width: 2px;
+    height:27px;
+    background: var(--white-next-color);
+    position: absolute;
+    top: 45%;
+    left: 11px; 
+    display: block;
+}
+.container .banner .banner-content .NextJs .letter-t::before {
+    content: "";
+    width: 20px;
+    height:2px;
+    background: var(--white-next-color);
+    position: absolute;
+    left: 2px;
+    top: 45%;
+    display: block;
+}
+.container .banner .banner-content .NextJs .right-text-logo{
+    width:20px;
+    height:20px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 52%;
+    right: 8%;
+    color: var(--white-next-color)
+}
